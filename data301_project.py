@@ -4,14 +4,18 @@ import time
 import dask
 from dask import bag as db
 
-INPUT_FILE = "australian_users_items.json"
-JSONL_FILE = "australian_users_items.jsonl"
-
+#INPUT_FILE = "australian_users_items.json"
+#JSONL_FILE = "australian_users_items.jsonl"
+#MIN_PLAYTIME = 60
+#MIN_SUPPORT_COUNT = 20
+#TOP_N = 20
+INPUT_FILE = "test_file.json"
+JSONL_FILE = "test_file.jsonl"
 MIN_PLAYTIME = 60
-MIN_SUPPORT_COUNT = 20
-TOP_N = 20
+MIN_SUPPORT_COUNT = 1
+TOP_N = 5
 
-RUN_SCALABILITY_TESTS = True
+RUN_SCALABILITY_TESTS = False
 THREAD_COUNTS = [1, 2, 4, 8]
 DATASET_SIZES = [1000, 5000, 10000, 20000]
 
